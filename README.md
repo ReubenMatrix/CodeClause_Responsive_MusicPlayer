@@ -1,7 +1,7 @@
 # CodeClause_Responsive_MusicPlayer
 The Music Player is a web-based application that allows users to listen to their favorite music tracks, create playlists, and control playback. This README provides an overview of the project and instructions for setting up and running the application.
 
-#Features
+# Features
 Music Playback: Play, pause, move forward and backwards.
 Search and Browse: Search for songs, albums, or artists and browse your music library.
 Responsive Design: The music player is designed to work seamlessly on both desktop and mobile devices.

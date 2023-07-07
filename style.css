@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  margin-top: 100px;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  z-index: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar form .form-control {
+  width: 300px;
+}
+
+.custom-navbar {
+  background-color: cyan;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  align-items: center;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+a .navbar-brand{
+  border: none;
+  outline: none;
+}
+
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
+.navbar-brand img {
+  margin-top: 7px;
+  width: 80px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.navbar-brand:hover{
+  border: none;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+  width: 70%;
+  background-image: url("./Images/bg2.jpg");
+  background-size: cover;
+  justify-content: space-between;
+  border-radius: 12px;
+  z-index: 1;
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.play {
+  position: fixed;
+  height: 100px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+#progress {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+.songlist {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.songItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 28px;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px); 
+  overflow: hidden;
+}
+
+
+.songItem {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 10px;
+  color: white;
+  background-color: #343541;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.songItem:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.songItem img {
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: black;
+}
+
+.songTitle {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+
+
+.songItemContainer-inner {
+  overflow-y: scroll;
+  max-height: calc(100vh - 100px); 
+}
+
+
+.songItemContainer-inner::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.timestamp {
+  color: #888888;
+  margin-left: auto;
+}
+
+.fa-circle-play {
+  color: #ff5000;
+  cursor: pointer;
+}
+
+.info {
+  font-size: 1rem;
+  position: absolute;
+  left: 195px;
+  bottom: 35px;
+}
+
+.playing {
+  background: aqua;
+  color: black;
+}
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 30px ;
+}
+
+#carouselExampleCaptions {
+  max-width: 1000px; 
+  width: 100%;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-inner .carousel-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+
+
+.carousel-indicators button.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    width: 80%;
+    background-image: url("https://i.pinimg.com/564x/ad/45/81/ad458128c8ad621ed5c6c0f1c73bee2c.jpg");
+    background-size: cover;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+  }
+
+  .container-fluid{
+    align-items: center;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .songItemContainer {
+   flex-direction: row;
+    width: 100%;
+  }
+
+  .songItem {
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 7px;
+  }
+
+  .songItem:hover {
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+  }
+
+  .info {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+@media only screen and (max-width: 989px){
+  .navbar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

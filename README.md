@@ -22,3 +22,16 @@ Search and Browse: Utilize the search functionality to find specific songs, albu
 Acknowledgments
 The Music Player project was inspired by spotify.
 Special thanks to the developers and contributors of the technologies used in this project.
+
+
+![image](https://github.com/ReubenMatrix/CodeClause_Responsive_MusicPlayer/assets/136352370/6a7a5f1d-3586-4294-9561-0801cc175ebf)
+
+
+![image](https://github.com/ReubenMatrix/CodeClause_Responsive_MusicPlayer/assets/136352370/092264ab-a752-441c-b5e4-c77edc6266c5)
+
+
+![image](https://github.com/ReubenMatrix/CodeClause_Responsive_MusicPlayer/assets/136352370/1ad825f2-0a83-4a7a-b22b-f8394a3aa61d)
+
+
+![image](https://github.com/ReubenMatrix/CodeClause_Responsive_MusicPlayer/assets/136352370/9b584a24-a412-46bd-ab6f-219711cc69b0)
+
